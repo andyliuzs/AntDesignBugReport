@@ -1,0 +1,40 @@
+@import '~antd/lib/style/themes/default.less';
+
+.marquee {
+  .scrollUp {
+    color: rgba(0, 0, 0, 0.447058823529412);
+    font-size: 14px;
+    font-weight: 400;
+    width: 115px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+  margin-top: -5px;
+    .scrollBox1, .scrollBox2 {
+      display: block;
+      span {
+        text-align: right;
+        display: block;
+      }
+    }
+  }
+
+  .scrollLeft {
+    width: 5rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.14rem;
+
+    .scrollBox1, .scrollBox2 {
+      display: inline;
+    }
+
+    span {
+      text-align: right;
+      margin-right: 0.2rem;
+    }
+  }
+}

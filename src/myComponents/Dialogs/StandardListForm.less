@@ -1,0 +1,277 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+@import '~@/constants/constants.less';
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+
+}
+
+
+.addLicenseDialog {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+
+}
+
+.imageUploadDesc {
+  margin-top: 62px;
+
+  span {
+    text-align: left;
+  }
+}
+
+.formResult {
+  width: 100%;
+
+  [class^='title'] {
+    margin-bottom: 8px;
+  }
+}
+
+.detailNote {
+  :global {
+    .ant-descriptions-item-content {
+      display: block !important;
+    }
+  }
+}
+
+.detailUploadImg {
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      cursor: auto !important;
+    }
+
+    .ant-upload.ant-upload-disabled {
+      cursor: auto !important;
+    }
+  }
+
+}
+
+.draggerStyle {
+  :global {
+    .ant-upload.ant-upload-drag {
+      margin: 0 auto;
+
+      width: 75%;
+      height: 200px;
+    }
+
+    .ant-upload-list-item {
+      margin: 0 auto;
+      width: 75%;
+    }
+
+    .ant-progress {
+      margin: 0 12.4%;
+      width: 75%;
+    }
+
+    //.ant-progress-line{
+    //  margin: 0 auto !important;
+    //  width: 75% !important;
+    //}
+
+
+  }
+}
+
+
+.dynamicDeleteButton {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  left: 5px;
+  font-size: 24px;
+  color: #999;
+  transition: all .3s;
+}
+
+.dynamicDeleteButton:hover {
+  color: #777;
+}
+
+.dynamicDeleteButton[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.customSelectLoadingContainer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.detailsHead {
+  font-weight: 600;
+  color: @text-color;
+}
+
+
+.disabledAnchor {
+  height: 200px;
+  overflow: auto;
+
+  a {
+    cursor: not-allowed;
+    pointer-events: none
+  }
+
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+
+  p {
+    padding: 7px 16px 7px 0;
+    line-height: 1.143;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.batchOperationResult {
+  width: 95%;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-xs) {
+    width: 100%;
+  }
+
+  .headerStyle {
+    font-size: 14px;
+    color: @heading-color;
+    line-height: 14px;
+
+    & > .success {
+      color: @success-color;
+      margin-right: 5px;
+    }
+
+    & > .error {
+      color: @error-color;
+      margin-right: 5px;
+    }
+
+    & > .info {
+      color: @primary-color;
+      margin-right: 5px;
+    }
+  }
+
+  .detailStyle {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 180%;
+
+    & > .success {
+      color: @success-color;
+      margin-right: 5px;
+    }
+
+    & > .error {
+      color: @error-color;
+      margin-right: 5px;
+    }
+  }
+
+  /*.description {
+    margin-bottom: 24px;
+    color: @text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .extra {
+    padding: 24px 40px;
+    text-align: left;
+    background: #fafafa;
+    border-radius: @border-radius-sm;
+
+    @media screen and (max-width: @screen-xs) {
+      padding: 18px 20px;
+    }
+  }
+
+  .actions {
+    margin-top: 32px;
+
+    button:not(:last-child) {
+      margin-right: 8px;
+    }
+  }*/
+}
+
+.taskRecoveryDetails {
+  height: 230px;
+  overflow: auto;
+}
+
+.tagSettingSearch {
+  float: right;
+  width: 190px;
+  margin-left: 16px;
+}
+
+.analysisTableColumns {
+  font-size: 12px;
+  textWrap: 'ellipsis';
+}
+
+.detailTable {
+  :global {
+    .ant-table-thead > tr {
+      border-style: none !important;
+    }
+
+    .ant-table-header {
+      margin-bottom: 10px !important;
+      overflow: hidden !important;
+      background-color: @DetailHeadBackground !important;
+    }
+
+    .ant-table-body {
+      overflow-y: auto !important;
+    }
+  }
+}
+
+.centerDetail {
+
+}
+
+.tabInnerStyle {
+  min-height: 130px;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}

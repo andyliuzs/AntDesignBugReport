@@ -1,0 +1,19 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.dynamicDeleteButton {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  left: 5px;
+  font-size: 24px;
+  color: #999;
+  transition: all 0.3s;
+}
+.dynamicDeleteButton:hover {
+  color: #777;
+}
+.dynamicDeleteButton[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

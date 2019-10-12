@@ -1,0 +1,151 @@
+
+
+
+在线时数据格式
+{
+		"id": 1268,
+		"in_server_id": 25,
+		"user_id": 8240,
+		"device_id": 12190,
+		"no": 0,
+		"code": "89286872",
+		"authpwd": "xtk9FkruZGx7ZqC1iADnA66zukCrjv0X",
+		"note": "",
+		"peer_type": "SERVER",
+		"activate_ip": "111.203.229.57",
+		"in_server": {
+			"id": 25,
+			"ip6": "fbe4:7bbb:cd10:d22b:9ec5:b837:27e1:39e9",
+			"ip4": "111.203.229.57",
+			"port": "50000",
+			"pubkey": "sv28j1p6zmqmxg0vgz8wv4y9fn1jw2c69vgl83rs91c8935p77h0.k",
+			"max": 40,
+			"note": "北京1",
+			"switch_id": 1
+		},
+		"user": {
+			"id": 8240,
+			"username": "starport-test",
+			"note": ""
+		},
+		"device": {
+			"id": 12190,
+			"ip6": "fb64:f0f3:a27b:886b:fc4:475c:9bd7:3d9b",
+			"pubkey": "8fxluksy30vv8zu77k7hn7ph2nm2qzcpggynjj8ysbuq50yww4x0.k",
+			"note": null,
+			"gone_time": null,
+			"create_time": "1567067950426",
+			"last_time": "1567067956870",
+			"active_time": "1567067950426",
+			"extended_information": {
+				"arch": "x64",
+				"release": "Ubuntu 18.04",
+				"app_type": "atomic_ee_cli",
+				"app_version": "1.3.6",
+				"docker_type": "starport",
+				"docker_version": "1.4.3"
+			},
+			"type": "SERVER",
+			"os": "UBUNTU"
+		},
+		"switch": {
+			"name": "交换机aaa"
+		},
+		"is_online": {
+			"id": 1268,
+			"in_server_id": 25,
+			"no": 0,
+			"device": {
+				"ip6": "fb64:f0f3:a27b:886b:fc4:475c:9bd7:3d9b",
+				"gone_time": null,
+				"create_time": "1567067950426",
+				"last_time": "1567067956870",
+				"active_time": "1567067950426"
+			}
+		}
+	}
+
+不在线数据格式
+{
+		"id": 6000,
+		"in_server_id": 123,
+		"user_id": 8200,
+		"device_id": 12140,
+		"no": 11,
+		"code": "35963443",
+		"authpwd": "CoqK8Yih7BVByHTtVmaFqD7AiSNEMBTq",
+		"note": "",
+		"peer_type": "SERVER",
+		"activate_ip": "111.203.229.57",
+		"in_server": {
+			"id": 123,
+			"ip6": "fb2c:b453:ad48:e73b:ce0b:6dd4:e410:1ddf",
+			"ip4": "111.203.229.57",
+			"port": "50001",
+			"pubkey": "1ju8qfu101pfsk5lmw1zhd03l6r5ydd5zttdv0btyms4d9s0r660.k",
+			"max": 50,
+			"note": "接入面板2",
+			"switch_id": 1
+		},
+		"user": {
+			"id": 8200,
+			"username": "connector_test",
+			"note": ""
+		},
+		"device": {
+			"id": 12140,
+			"ip6": "fbed:8317:bc77:d242:6b29:2ca2:e0cf:5742",
+			"pubkey": "23qcybk0frk1knfp4bwzxw2xhrlwqzgmmxfgh09rtyd558c8l5q0.k",
+			"note": null,
+			"gone_time": "1566273074443",
+			"create_time": "1557207829758",
+			"last_time": "1562229305282",
+			"active_time": "1557207829758",
+			"extended_information": {
+				"arch": "x64",
+				"release": "Ubuntu 18.04",
+				"app_type": "atomic_ee_cli",
+				"app_version": "1.6.0",
+				"docker_type": "io",
+				"docker_version": "1.1.3"
+			},
+			"type": "SERVER",
+			"os": "UBUNTU"
+		},
+		"switch": {
+			"name": "交换机aaa"
+		}
+	}
+
+
+WS online在线推送格式
+["ni", {
+	"type": "online",
+	"data": {
+		"nis": [{
+			"id": 1273,
+			"in_server_id": 25,
+			"no": 5,
+			"device": {
+				"ip6": "fb98:21d6:b345:968d:6a09:c3bb:dd78:16e9",
+				"gone_time": "1569492260189",
+				"create_time": "1568617183168",
+				"last_time": "1569547199138",
+				"active_time": "1568617183168"
+			}
+		}, {
+			"id": 1268,
+			"in_server_id": 25,
+			"no": 0,
+			"device": {
+				"ip6": "fb64:f0f3:a27b:886b:fc4:475c:9bd7:3d9b",
+				"gone_time": null,
+				"create_time": "1567067950426",
+				"last_time": "1567067956870",
+				"active_time": "1567067950426"
+			}
+		}]
+	}
+}, null]
+
+WS offline不在线推送格式
